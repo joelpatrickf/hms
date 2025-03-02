@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+/*  background: url(../../../images/logo-hms.jpg) no-repeat center top;*/
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  opacity: 0.7;
+  border-radius: .3rem;
+
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  border-color: white;
+  border-style: solid;  
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: .3rem;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+
+
+/*de aqui PARA ABAJO ES DEL CARRUSEL Y EL NAVBAR*/
+
+  .carousel {
+      height: 90%!important;
+  }
+
+        /* Estilos personalizados para el carrusel */
+        .carousel-item {
+            height: 90vh; /* Altura relativa al viewport */
+            min-height: 300px; /* Altura mínima para dispositivos pequeños */
+        }
+        .carousel-item img {
+            object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+            width: 100%;
+            height: 150%;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 40vh; /* Altura menor en dispositivos móviles */
+            }
+          .card-img-top {
+              width: 78%!important;
+          }
+          .ragde{
+         display: grid;
+          justify-content: center;            
+          }                    
+        }
+
+         @media (max-width: 1200px) {
+          .card-img-top {
+              height: 59%!important;
+          }
+
+         }
+
+         @media (max-width: 991px) {
+          .card-img-top {
+              height: 100%!important;
+              width: 50%!important;
+          }
+
+         }   
+
+       @media (max-width: 580px) {
+          .card-img-top {
+              height: 100%!important;
+              width: 100%!important;
+          }
+      .login-box {
+          top: 32%!important;
+      }         
+         }   
+
+    /*@media only screen and (max-width: 768px) {
+
+    }*/
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+  /* Estilos básicos para el navbar */
+  .navbar {  
+    padding: 10px 20px; /* Espaciado interno */
+  }
+
+  /* Estilos para la lista de navegación */
+  .nav-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+  }
+
+  /* Estilos para los elementos de la lista */
+  .nav-list li {
+    margin-left: 20px; /* Espaciado entre elementos */
+  }
+
+  /* Estilos para los enlaces */
+  .nav-list li a {
+    color: black; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px;
+  }
+
+  /* Cambia el color del enlace al pasar el ratón */
+  .nav-list li a:hover {
+    color: gray;
+  }
